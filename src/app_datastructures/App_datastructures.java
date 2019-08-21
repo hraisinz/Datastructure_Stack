@@ -12,6 +12,7 @@ public class App_datastructures {
     public static void main(String[] args) {
         Stack s1 = new Stack(10);
         StackClient.getStack(s1);
+        
     }
     
 }
