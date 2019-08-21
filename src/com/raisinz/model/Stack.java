@@ -18,20 +18,16 @@ public class Stack {
     }
 
     public void push(int v) {
-        if (sp == overflowValue) {
-            System.out.println(overflowMessage);
-        } else {
-            stk[--sp] = v;
-        }
+        if (sp == overflowValue) System.out.println(overflowMessage);
+        else stk[--sp] = v;   
     }
 
     public int pop() {
         if (sp == stk.length) {
             System.out.println(underflowMessage);
             return -1;
-        } else {
-            return stk[++sp - 1];
-        }
+        } else return stk[++sp - 1];
+        
     }
 
     public void getStackData() {
